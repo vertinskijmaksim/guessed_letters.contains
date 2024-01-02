@@ -1,0 +1,8 @@
+  let guessed: char = guess.chars().next().unwrap();
+        if guessed_letters.contains(&guessed) {
+            println!("You've already guessed this letter.");
+            continue;
+        }
+
+        guessed_letters.insert(guessed);
+        let mut found = false;
